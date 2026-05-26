@@ -1,40 +1,17 @@
 :root {
-  --bg: #f5faf9;
+  --bg: #f8fcfb;
   --surface: #ffffff;
-  --surface-strong: #eef9f7;
-  --ink: #102a3a;
-  --muted: #5d7180;
-  --line: #d8e7e5;
+  --ink: #102a43;
+  --muted: #5d7082;
+  --line: #d9e8e7;
   --teal: #0f766e;
-  --teal-dark: #0a5f59;
-  --cyan: #0b8fb3;
-  --navy: #123047;
+  --teal-dark: #105e59;
+  --cyan: #0ea5b7;
   --green: #15803d;
   --red: #dc2626;
   --amber: #f59e0b;
-  --gold: #c8861f;
   --shadow: 0 20px 50px rgba(16, 42, 67, 0.14);
-  --soft-shadow: 0 12px 34px rgba(16, 42, 67, 0.08);
   --radius: 8px;
-}
-
-:root[data-theme="dark"] {
-  --bg: #081f27;
-  --surface: #0f2f35;
-  --surface-strong: #163f46;
-  --ink: #eefcf9;
-  --muted: #b9d1d1;
-  --line: rgba(210, 246, 241, 0.18);
-  --teal: #4fd1c5;
-  --teal-dark: #8ee8df;
-  --cyan: #60d5ee;
-  --navy: #062a34;
-  --green: #4ade80;
-  --red: #fb7185;
-  --amber: #fbbf24;
-  --gold: #facc15;
-  --shadow: 0 22px 55px rgba(0, 0, 0, 0.34);
-  --soft-shadow: 0 12px 34px rgba(0, 0, 0, 0.28);
 }
 
 * {
@@ -51,7 +28,6 @@ body {
   color: var(--ink);
   font-family: "Segoe UI", Roboto, Arial, sans-serif;
   line-height: 1.6;
-  transition: background 180ms ease, color 180ms ease;
 }
 
 img,
@@ -86,30 +62,6 @@ textarea {
   stroke-width: 2;
 }
 
-.top-strip {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: clamp(0.8rem, 3vw, 2rem);
-  min-height: 42px;
-  padding: 0.45rem 1rem;
-  background: var(--navy);
-  color: #ecfeff;
-  font-size: 0.88rem;
-  font-weight: 800;
-}
-
-.top-strip a,
-.top-strip span {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-}
-
-.top-strip .icon {
-  color: #9ae6dd;
-}
-
 .site-header {
   position: sticky;
   top: 0;
@@ -120,7 +72,7 @@ textarea {
   gap: 1.25rem;
   min-height: 76px;
   padding: 0.75rem clamp(1rem, 4vw, 3.25rem);
-  background: color-mix(in srgb, var(--bg) 92%, transparent);
+  background: rgba(248, 252, 251, 0.92);
   border-bottom: 1px solid rgba(217, 232, 231, 0.85);
   backdrop-filter: blur(18px);
 }
@@ -137,7 +89,7 @@ textarea {
   height: 44px;
   object-fit: cover;
   border-radius: 50%;
-  border: 2px solid var(--surface);
+  border: 2px solid white;
   box-shadow: 0 8px 22px rgba(16, 42, 67, 0.14);
 }
 
@@ -165,7 +117,7 @@ textarea {
 
 .site-nav a {
   border-radius: 999px;
-  color: color-mix(in srgb, var(--ink) 82%, var(--muted));
+  color: #27445a;
   font-size: 0.95rem;
   font-weight: 700;
   padding: 0.65rem 0.9rem;
@@ -173,7 +125,7 @@ textarea {
 
 .site-nav a:hover,
 .site-nav a:focus-visible {
-  background: var(--surface-strong);
+  background: #e7f7f5;
   color: var(--teal-dark);
 }
 
@@ -181,7 +133,7 @@ textarea {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  background: color-mix(in srgb, var(--red) 10%, var(--surface));
+  background: #fff1f2;
   color: var(--red);
 }
 
@@ -191,7 +143,7 @@ textarea {
   height: 44px;
   place-items: center;
   border: 1px solid var(--line);
-  background: var(--surface);
+  background: white;
   color: var(--ink);
   border-radius: 50%;
   cursor: pointer;
@@ -201,37 +153,15 @@ textarea {
   display: none;
 }
 
-.theme-toggle {
-  display: inline-grid;
-  width: 42px;
-  height: 42px;
-  place-items: center;
-  border: 1px solid var(--line);
-  border-radius: 50%;
-  background: var(--surface);
-  color: var(--teal-dark);
-  cursor: pointer;
-}
-
-.theme-toggle .theme-moon,
-:root[data-theme="dark"] .theme-toggle .theme-sun {
-  display: none;
-}
-
-:root[data-theme="dark"] .theme-toggle .theme-moon {
-  display: block;
-}
-
 .hero {
   position: relative;
   display: grid;
   align-items: center;
   min-height: clamp(520px, 74svh, 720px);
-  padding: clamp(2rem, 5vw, 4rem) 0;
   overflow: hidden;
   isolation: isolate;
   background-image:
-    linear-gradient(100deg, rgba(245, 250, 249, 0.98) 0%, rgba(245, 250, 249, 0.96) 48%, rgba(245, 250, 249, 0.82) 67%, rgba(245, 250, 249, 0.2) 92%),
+    linear-gradient(90deg, rgba(248, 252, 251, 0.98) 0%, rgba(248, 252, 251, 0.96) 58%, rgba(248, 252, 251, 0.86) 72%, rgba(248, 252, 251, 0.22) 88%),
     url("assets/hero-rudra-hospital.png");
   background-position: center;
   background-size: cover;
@@ -243,21 +173,13 @@ textarea {
   inset: auto 0 0;
   height: 34%;
   z-index: -1;
-  background: linear-gradient(0deg, var(--bg), rgba(245, 250, 249, 0));
-}
-
-.hero-shell {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 370px);
-  gap: clamp(1.5rem, 5vw, 4rem);
-  align-items: center;
-  width: min(1160px, calc(100% - 2rem));
-  margin: 0 auto;
+  background: linear-gradient(0deg, rgba(248, 252, 251, 1), rgba(248, 252, 251, 0));
 }
 
 .hero-content {
-  width: min(700px, 100%);
-  padding: 2rem 0;
+  width: min(650px, calc(100% - 2rem));
+  margin-left: clamp(1rem, 6vw, 5rem);
+  padding: 4rem 0;
 }
 
 .hero-logo {
@@ -297,7 +219,7 @@ h1 {
 .hero-copy {
   width: min(580px, 100%);
   margin-bottom: 1.5rem;
-  color: color-mix(in srgb, var(--ink) 72%, var(--muted));
+  color: #314b60;
   font-size: clamp(1.08rem, 2vw, 1.35rem);
 }
 
@@ -345,19 +267,8 @@ h1 {
 }
 
 .button-secondary {
-  background: var(--surface-strong);
+  background: #eef9f8;
   color: var(--teal-dark);
-}
-
-.button-whatsapp {
-  background: var(--green);
-  color: white;
-  box-shadow: 0 16px 26px rgba(21, 128, 61, 0.2);
-}
-
-.button-whatsapp:hover,
-.button-whatsapp:focus-visible {
-  background: #166534;
 }
 
 .hero-meta {
@@ -373,83 +284,15 @@ h1 {
   gap: 0.35rem;
   min-height: 38px;
   border: 1px solid rgba(15, 118, 110, 0.2);
-  background: color-mix(in srgb, var(--surface) 82%, transparent);
+  background: rgba(255, 255, 255, 0.78);
   border-radius: 999px;
-  color: color-mix(in srgb, var(--ink) 76%, var(--muted));
+  color: #355167;
   font-size: 0.92rem;
   padding: 0.4rem 0.75rem;
 }
 
 .hero-meta strong {
   color: var(--teal-dark);
-}
-
-.hero-care-card {
-  align-self: end;
-  padding: clamp(1rem, 3vw, 1.25rem);
-  background: color-mix(in srgb, var(--surface) 88%, transparent);
-  border: 1px solid rgba(15, 118, 110, 0.22);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  backdrop-filter: blur(18px);
-}
-
-.care-card-header {
-  display: flex;
-  align-items: center;
-  gap: 0.55rem;
-  margin-bottom: 1rem;
-  color: var(--teal-dark);
-  font-size: 0.95rem;
-}
-
-.live-dot {
-  width: 0.7rem;
-  height: 0.7rem;
-  border-radius: 50%;
-  background: var(--green);
-  box-shadow: 0 0 0 6px rgba(21, 128, 61, 0.12);
-}
-
-.hero-care-card ul {
-  display: grid;
-  gap: 0.9rem;
-  margin: 0 0 1.1rem;
-  padding: 0;
-  list-style: none;
-}
-
-.hero-care-card li {
-  display: flex;
-  gap: 0.75rem;
-  align-items: flex-start;
-  padding-bottom: 0.9rem;
-  border-bottom: 1px solid var(--line);
-  color: var(--muted);
-}
-
-.hero-care-card li:last-child {
-  padding-bottom: 0;
-  border-bottom: 0;
-}
-
-.hero-care-card li .icon {
-  color: var(--teal);
-  margin-top: 0.2rem;
-}
-
-.hero-care-card strong {
-  display: block;
-  color: var(--ink);
-  line-height: 1.2;
-}
-
-.text-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  color: var(--teal-dark);
-  font-weight: 900;
 }
 
 .quick-access {
@@ -466,13 +309,13 @@ h1 {
   align-items: center;
   gap: 0.75rem;
   min-width: 0;
-  background: var(--surface);
+  background: white;
   padding: 1rem clamp(1rem, 2vw, 1.5rem);
 }
 
 .quick-access a:hover,
 .quick-access a:focus-visible {
-  background: var(--surface-strong);
+  background: #f0fbfa;
 }
 
 .quick-access .icon {
@@ -492,55 +335,6 @@ h1 {
   color: var(--ink);
   font-size: 0.92rem;
   line-height: 1.2;
-}
-
-.care-access-section {
-  padding-bottom: 2rem;
-}
-
-.section-heading > p {
-  color: var(--muted);
-  font-size: 1.04rem;
-}
-
-.care-access-grid {
-  display: grid;
-  grid-template-columns: 1.15fr repeat(2, minmax(0, 1fr));
-  gap: 1rem;
-}
-
-.care-access-card {
-  display: grid;
-  align-content: start;
-  min-height: 290px;
-  padding: clamp(1.1rem, 3vw, 1.5rem);
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  box-shadow: var(--soft-shadow);
-}
-
-.care-access-card.urgent {
-  background:
-    linear-gradient(135deg, rgba(220, 38, 38, 0.12), transparent 50%),
-    var(--surface);
-  border-color: rgba(220, 38, 38, 0.22);
-}
-
-.care-access-card h3 {
-  margin-bottom: 0.55rem;
-  font-size: 1.35rem;
-  line-height: 1.15;
-}
-
-.care-access-card p {
-  color: var(--muted);
-}
-
-.care-access-card .button {
-  width: fit-content;
-  align-self: end;
-  margin-top: auto;
 }
 
 .section {
@@ -563,7 +357,6 @@ h1 {
 
 .section-heading h2,
 .appointment-copy h2,
-.feedback-copy h2,
 .location-copy h2 {
   margin-bottom: 0;
   font-size: clamp(2rem, 4vw, 3.3rem);
@@ -579,7 +372,7 @@ h1 {
 }
 
 .intro-grid p {
-  color: color-mix(in srgb, var(--ink) 72%, var(--muted));
+  color: #355167;
   font-size: 1.08rem;
 }
 
@@ -595,96 +388,13 @@ h1 {
   display: flex;
   align-items: flex-start;
   gap: 0.65rem;
-  color: color-mix(in srgb, var(--ink) 82%, var(--muted));
+  color: #2b4358;
   font-weight: 700;
 }
 
 .check-list .icon {
   color: var(--green);
   margin-top: 0.2rem;
-}
-
-.specialty-section {
-  padding-top: 2rem;
-}
-
-.specialty-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1px;
-  overflow: hidden;
-  background: var(--line);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-}
-
-.specialty-grid article {
-  min-height: 235px;
-  padding: clamp(1rem, 3vw, 1.35rem);
-  background: var(--surface);
-}
-
-.specialty-grid span {
-  display: inline-grid;
-  width: 42px;
-  height: 42px;
-  place-items: center;
-  margin-bottom: 1rem;
-  border-radius: 50%;
-  background: var(--surface-strong);
-  color: var(--teal-dark);
-  font-weight: 900;
-}
-
-.specialty-grid h3 {
-  margin-bottom: 0.55rem;
-  font-size: 1.08rem;
-  line-height: 1.25;
-}
-
-.specialty-grid p {
-  margin: 0;
-  color: var(--muted);
-}
-
-.emergency-photo-band {
-  display: flex;
-  align-items: center;
-  min-height: clamp(430px, 58vw, 620px);
-  padding: clamp(3rem, 7vw, 6rem) clamp(1rem, 6vw, 5rem);
-  background-image:
-    linear-gradient(90deg, rgba(6, 24, 39, 0.86) 0%, rgba(6, 24, 39, 0.72) 42%, rgba(6, 24, 39, 0.2) 74%),
-    url("assets/emergency-care-team.jpg");
-  background-position: center;
-  background-size: cover;
-  color: white;
-}
-
-.emergency-photo-content {
-  width: min(560px, 100%);
-}
-
-.emergency-photo-content .eyebrow {
-  color: #8ee8df;
-}
-
-.emergency-photo-content h2 {
-  margin-bottom: 1rem;
-  font-size: clamp(2.2rem, 5vw, 4.4rem);
-  line-height: 1;
-  letter-spacing: 0;
-}
-
-.emergency-photo-content p {
-  color: #dffdfa;
-  font-size: 1.08rem;
-}
-
-.emergency-photo-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.8rem;
-  margin-top: 1.5rem;
 }
 
 .facilities-section {
@@ -700,7 +410,7 @@ h1 {
 .facility-card {
   min-height: 248px;
   padding: 1.25rem;
-  background: var(--surface);
+  background: white;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   box-shadow: 0 8px 30px rgba(16, 42, 67, 0.06);
@@ -733,12 +443,12 @@ h1 {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1px;
-  background: color-mix(in srgb, var(--teal) 28%, var(--line));
+  background: #bfe3df;
 }
 
 .care-band div {
   min-height: 190px;
-  background: var(--teal-dark);
+  background: #0d5c57;
   color: white;
   padding: clamp(1.25rem, 3vw, 2rem);
 }
@@ -753,7 +463,7 @@ h1 {
 .care-band p {
   max-width: 28rem;
   margin-bottom: 0;
-  color: color-mix(in srgb, white 82%, var(--teal));
+  color: #d9fffb;
 }
 
 .band-number {
@@ -761,91 +471,6 @@ h1 {
   margin-bottom: 1rem;
   color: #9ae6dd;
   font-weight: 900;
-}
-
-.patient-section {
-  padding-top: 2rem;
-}
-
-.visit-guide-section {
-  display: grid;
-  grid-template-columns: minmax(260px, 0.75fr) minmax(320px, 1.25fr);
-  gap: clamp(1.5rem, 5vw, 4rem);
-  align-items: start;
-  padding-top: clamp(3rem, 6vw, 5rem);
-}
-
-.visit-guide-copy p {
-  color: color-mix(in srgb, var(--ink) 72%, var(--muted));
-}
-
-.visit-steps {
-  display: grid;
-  gap: 1rem;
-}
-
-.visit-steps article {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 1rem;
-  align-items: start;
-  padding: clamp(1rem, 3vw, 1.25rem);
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  box-shadow: var(--soft-shadow);
-}
-
-.visit-steps span {
-  display: grid;
-  width: 44px;
-  height: 44px;
-  place-items: center;
-  border-radius: 50%;
-  background: var(--navy);
-  color: var(--surface);
-  font-weight: 900;
-}
-
-.visit-steps h3 {
-  margin-bottom: 0.35rem;
-  line-height: 1.2;
-}
-
-.visit-steps p {
-  margin: 0;
-  color: var(--muted);
-}
-
-.patient-grid {
-  display: grid;
-  grid-template-columns: minmax(280px, 0.9fr) minmax(320px, 1.1fr);
-  gap: clamp(1.5rem, 5vw, 3.5rem);
-  align-items: start;
-}
-
-.requirements-panel {
-  display: grid;
-  gap: 1rem;
-}
-
-.requirement-card {
-  padding: 1.2rem;
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  box-shadow: 0 8px 30px rgba(16, 42, 67, 0.06);
-}
-
-.requirement-card h3 {
-  margin-bottom: 0.45rem;
-  font-size: 1.05rem;
-  line-height: 1.25;
-}
-
-.requirement-card p {
-  margin-bottom: 0;
-  color: var(--muted);
 }
 
 .appointment-section {
@@ -861,7 +486,7 @@ h1 {
 }
 
 .appointment-copy p {
-  color: color-mix(in srgb, var(--ink) 72%, var(--muted));
+  color: #3c566b;
 }
 
 .contact-stack {
@@ -884,7 +509,7 @@ h1 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
   padding: clamp(1rem, 3vw, 1.5rem);
-  background: var(--surface);
+  background: white;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
@@ -902,7 +527,7 @@ h1 {
 }
 
 label {
-  color: color-mix(in srgb, var(--ink) 86%, var(--muted));
+  color: #244058;
   font-size: 0.9rem;
   font-weight: 800;
 }
@@ -912,9 +537,9 @@ select,
 textarea {
   width: 100%;
   min-height: 48px;
-  border: 1px solid color-mix(in srgb, var(--line) 84%, var(--teal));
+  border: 1px solid #cfe0df;
   border-radius: var(--radius);
-  background: color-mix(in srgb, var(--surface) 92%, var(--bg));
+  background: #fbfefd;
   color: var(--ink);
   padding: 0.75rem 0.85rem;
   outline: none;
@@ -946,43 +571,6 @@ textarea:focus {
   color: var(--red);
 }
 
-.feedback-section {
-  display: grid;
-  grid-template-columns: minmax(260px, 0.85fr) minmax(320px, 1.15fr);
-  gap: clamp(1.5rem, 5vw, 4rem);
-  align-items: start;
-  padding-top: 2rem;
-}
-
-.feedback-copy p {
-  color: color-mix(in srgb, var(--ink) 72%, var(--muted));
-}
-
-.review-points {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.65rem;
-  margin-top: 1.25rem;
-}
-
-.review-points span {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  min-height: 38px;
-  border: 1px solid rgba(15, 118, 110, 0.2);
-  background: var(--surface);
-  border-radius: 999px;
-  color: color-mix(in srgb, var(--ink) 82%, var(--muted));
-  font-size: 0.9rem;
-  font-weight: 800;
-  padding: 0.4rem 0.75rem;
-}
-
-.review-points .icon {
-  color: var(--teal);
-}
-
 .location-section {
   display: grid;
   grid-template-columns: minmax(280px, 0.8fr) minmax(320px, 1fr);
@@ -999,7 +587,7 @@ textarea:focus {
     linear-gradient(135deg, rgba(14, 165, 183, 0.18), rgba(21, 128, 61, 0.16)),
     repeating-linear-gradient(0deg, transparent 0 34px, rgba(16, 42, 67, 0.08) 35px 36px),
     repeating-linear-gradient(90deg, transparent 0 34px, rgba(16, 42, 67, 0.08) 35px 36px),
-    var(--surface-strong);
+    #effbf8;
   border: 1px solid var(--line);
   border-radius: var(--radius);
 }
@@ -1017,7 +605,7 @@ textarea:focus {
 
 address {
   margin: 1rem 0 1.5rem;
-  color: color-mix(in srgb, var(--ink) 72%, var(--muted));
+  color: #355167;
   font-style: normal;
 }
 
@@ -1091,25 +679,15 @@ address {
 
 @media (max-width: 980px) {
   .quick-access,
-  .facility-grid,
-  .specialty-grid {
+  .facility-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .section-heading,
-  .hero-shell,
-  .care-access-grid,
   .intro-grid,
-  .visit-guide-section,
-  .patient-grid,
   .appointment-section,
-  .feedback-section,
   .location-section {
     grid-template-columns: 1fr;
-  }
-
-  .hero-care-card {
-    align-self: auto;
   }
 
   .appointment-copy {
@@ -1122,13 +700,6 @@ address {
 }
 
 @media (max-width: 760px) {
-  .top-strip {
-    justify-content: flex-start;
-    gap: 0.75rem;
-    overflow-x: auto;
-    white-space: nowrap;
-  }
-
   .site-header {
     min-height: 68px;
   }
@@ -1145,7 +716,7 @@ address {
     align-items: stretch;
     gap: 0.25rem;
     padding: 0.8rem;
-    background: var(--surface);
+    background: white;
     border: 1px solid var(--line);
     border-radius: var(--radius);
     box-shadow: var(--shadow);
@@ -1167,11 +738,6 @@ address {
     border-radius: var(--radius);
   }
 
-  .theme-toggle {
-    width: 100%;
-    border-radius: var(--radius);
-  }
-
   .hero {
     min-height: clamp(540px, 76svh, 650px);
     background-image:
@@ -1182,16 +748,7 @@ address {
 
   .hero-content {
     margin: 0 auto;
-    padding: 1rem 0 0;
-  }
-
-  .emergency-photo-band {
-    min-height: 560px;
-    align-items: flex-end;
-    background-image:
-      linear-gradient(180deg, rgba(6, 24, 39, 0.12) 0%, rgba(6, 24, 39, 0.72) 52%, rgba(6, 24, 39, 0.94) 100%),
-      url("assets/emergency-care-team.jpg");
-    background-position: center;
+    padding: 2.75rem 0 6rem;
   }
 
   .hero-actions {
@@ -1199,15 +756,7 @@ address {
     flex-direction: column;
   }
 
-  .emergency-photo-actions {
-    flex-direction: column;
-  }
-
   .button {
-    width: 100%;
-  }
-
-  .care-access-card .button {
     width: 100%;
   }
 
@@ -1217,11 +766,8 @@ address {
   }
 
   .appointment-form,
-  .inquiry-form,
-  .feedback-form,
   .quick-access,
-  .facility-grid,
-  .specialty-grid {
+  .facility-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1253,35 +799,5 @@ address {
 
   .section {
     width: min(100% - 1rem, 1160px);
-  }
-}
-
-:root[data-theme="dark"] .hero {
-  background-image:
-    linear-gradient(100deg, rgba(8, 31, 39, 0.98) 0%, rgba(8, 31, 39, 0.92) 50%, rgba(8, 31, 39, 0.78) 70%, rgba(8, 31, 39, 0.28) 100%),
-    url("assets/hero-rudra-hospital.png");
-}
-
-:root[data-theme="dark"] .hero::after {
-  background: linear-gradient(0deg, var(--bg), rgba(8, 31, 39, 0));
-}
-
-:root[data-theme="dark"] .emergency-photo-band {
-  background-image:
-    linear-gradient(90deg, rgba(4, 20, 27, 0.92) 0%, rgba(4, 20, 27, 0.78) 45%, rgba(4, 20, 27, 0.35) 78%),
-    url("assets/emergency-care-team.jpg");
-}
-
-@media (max-width: 760px) {
-  :root[data-theme="dark"] .hero {
-    background-image:
-      linear-gradient(180deg, rgba(8, 31, 39, 0.98) 0%, rgba(8, 31, 39, 0.9) 44%, rgba(8, 31, 39, 0.6) 100%),
-      url("assets/hero-rudra-hospital.png");
-  }
-
-  :root[data-theme="dark"] .emergency-photo-band {
-    background-image:
-      linear-gradient(180deg, rgba(4, 20, 27, 0.2) 0%, rgba(4, 20, 27, 0.74) 52%, rgba(4, 20, 27, 0.96) 100%),
-      url("assets/emergency-care-team.jpg");
   }
 }
