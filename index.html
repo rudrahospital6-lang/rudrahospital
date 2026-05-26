@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rudra Hospital | Multispeciality Hospital in Vadodara</title>
+    <meta
+      name="description"
+      content="Rudra Hospital in Vadodara offers multispeciality care, 24/7 emergency trauma support, OPD, IPD, day care and appointment services."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <svg aria-hidden="true" class="icon-sprite" xmlns="http://www.w3.org/2000/svg">
+      <symbol id="icon-phone" viewBox="0 0 24 24">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.35 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" />
+      </symbol>
+      <symbol id="icon-calendar" viewBox="0 0 24 24">
+        <path d="M8 2v4m8-4v4M3 10h18M5 4h14a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z" />
+      </symbol>
+      <symbol id="icon-map" viewBox="0 0 24 24">
+        <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 0 1 16 0z" />
+        <circle cx="12" cy="10" r="3" />
+      </symbol>
+      <symbol id="icon-heart-pulse" viewBox="0 0 24 24">
+        <path d="M19 14c1.5-1.5 3-3.3 3-5.5A5.5 5.5 0 0 0 12 5a5.5 5.5 0 0 0-10 3.5c0 2.2 1.5 4 3 5.5l7 7z" />
+        <path d="M3.22 12H9.5l.75-2 2.25 5 1.5-3h6.78" />
+      </symbol>
+      <symbol id="icon-bed" viewBox="0 0 24 24">
+        <path d="M2 4v16M2 14h20v6M6 14V8a2 2 0 0 1 2-2h4a3 3 0 0 1 3 3v5M15 14h7v-3a3 3 0 0 0-3-3h-4" />
+      </symbol>
+      <symbol id="icon-stethoscope" viewBox="0 0 24 24">
+        <path d="M4.8 2v6.8a4.2 4.2 0 0 0 8.4 0V2M2 2h5m4 0h5m2 12a4 4 0 0 0 4 4v0a4 4 0 0 0 4-4v-2" />
+        <circle cx="20" cy="10" r="2" />
+      </symbol>
+      <symbol id="icon-clock" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" />
+        <path d="M12 6v6l4 2" />
+      </symbol>
+      <symbol id="icon-mail" viewBox="0 0 24 24">
+        <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z" />
+        <path d="m22 7-10 7L2 7" />
+      </symbol>
+      <symbol id="icon-message" viewBox="0 0 24 24">
+        <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z" />
+      </symbol>
+      <symbol id="icon-file-text" viewBox="0 0 24 24">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+        <path d="M14 2v6h6M8 13h8M8 17h8M8 9h2" />
+      </symbol>
+      <symbol id="icon-star" viewBox="0 0 24 24">
+        <path d="m12 2 3.1 6.3 6.9 1-5 4.8 1.2 6.9-6.2-3.3L5.8 21 7 14.1 2 9.3l6.9-1z" />
+      </symbol>
+      <symbol id="icon-menu" viewBox="0 0 24 24">
+        <path d="M4 6h16M4 12h16M4 18h16" />
+      </symbol>
+      <symbol id="icon-x" viewBox="0 0 24 24">
+        <path d="m18 6-12 12M6 6l12 12" />
+      </symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24">
+        <path d="m20 6-11 11-5-5" />
+      </symbol>
+      <symbol id="icon-shield" viewBox="0 0 24 24">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+        <path d="M9 12l2 2 4-5" />
+      </symbol>
+      <symbol id="icon-ambulance" viewBox="0 0 24 24">
+        <path d="M10 17h4M6 17H4a2 2 0 0 1-2-2v-4l3-5h7v11H6zM12 8h5l5 5v2a2 2 0 0 1-2 2h-2" />
+        <path d="M7 9v4M5 11h4" />
+        <circle cx="6" cy="17" r="2" />
+        <circle cx="18" cy="17" r="2" />
+      </symbol>
+      <symbol id="icon-users" viewBox="0 0 24 24">
+        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+        <circle cx="9" cy="7" r="4" />
+        <path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+      </symbol>
+      <symbol id="icon-arrow-right" viewBox="0 0 24 24">
+        <path d="M5 12h14M13 5l7 7-7 7" />
+      </symbol>
+      <symbol id="icon-sun" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="4" />
+        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+      </symbol>
+      <symbol id="icon-moon" viewBox="0 0 24 24">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+      </symbol>
+    </svg>
+
+    <div class="top-strip" aria-label="Hospital contact bar">
+      <a href="tel:+918866290011">
+        <svg class="icon"><use href="#icon-ambulance"></use></svg>
+        Emergency: 8866290011
+      </a>
+      <span>
+        <svg class="icon"><use href="#icon-clock"></use></svg>
+        24/7 trauma support
+      </span>
+      <a href="#location">
+        <svg class="icon"><use href="#icon-map"></use></svg>
+        Sama Canal Road, Vadodara
+      </a>
+    </div>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Rudra Hospital home">
+        <img class="brand-logo" src="assets/rudra-hospital-logo.jpg" alt="Rudra Hospital logo" />
+        <span>
+          <strong>Rudra Hospital</strong>
+          <small>Vadodara</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
+        <svg class="icon icon-menu"><use href="#icon-menu"></use></svg>
+        <svg class="icon icon-close"><use href="#icon-x"></use></svg>
+      </button>
+
+      <nav class="site-nav" data-nav>
+        <a href="#care-access">Care Access</a>
+        <a href="#facilities">Services</a>
+        <a href="#visit-guide">Patient Guide</a>
+        <a href="#appointment">Appointment</a>
+        <a href="#patient-info">Inquiry</a>
+        <a href="#location">Location</a>
+        <button class="theme-toggle" type="button" aria-label="Switch color theme" data-theme-toggle>
+          <svg class="icon theme-sun"><use href="#icon-sun"></use></svg>
+          <svg class="icon theme-moon"><use href="#icon-moon"></use></svg>
+        </button>
+        <a class="nav-call" href="tel:+918866290011">
+          <svg class="icon"><use href="#icon-phone"></use></svg>
+          Emergency
+        </a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-shell">
+          <div class="hero-content">
+            <img class="hero-logo" src="assets/rudra-hospital-logo.jpg" alt="Rudra Hospital logo" />
+            <p class="eyebrow">Multispeciality Hospital in Vadodara</p>
+            <h1 id="hero-title">Rudra Hospital</h1>
+            <p class="hero-copy">
+              Emergency, trauma, OPD, IPD and day care support with a clear path from first call to follow-up care.
+            </p>
+            <div class="hero-actions" aria-label="Primary actions">
+              <a class="button button-emergency" href="tel:+918866290011">
+                <svg class="icon"><use href="#icon-phone"></use></svg>
+                Call Emergency
+              </a>
+              <a class="button button-primary" href="#appointment">
+                <svg class="icon"><use href="#icon-calendar"></use></svg>
+                Book Appointment
+              </a>
+              <a
+                class="button button-whatsapp"
+                href="https://wa.me/918866290011?text=Hello%20Rudra%20Hospital%2C%20I%20want%20to%20request%20an%20appointment."
+                target="_blank"
+                rel="noopener"
+              >
+                <svg class="icon"><use href="#icon-message"></use></svg>
+                WhatsApp Request
+              </a>
+            </div>
+            <div class="hero-meta" aria-label="Hospital highlights">
+              <span><strong>24/7</strong> Trauma Center</span>
+              <span><strong>OPD</strong> Consultation</span>
+              <span><strong>IPD</strong> Admission</span>
+              <span><strong>Day Care</strong> Procedures</span>
+            </div>
+          </div>
+
+          <aside class="hero-care-card" aria-label="Today care desk">
+            <div class="care-card-header">
+              <span class="live-dot" aria-hidden="true"></span>
+              <strong>Care desk active</strong>
+            </div>
+            <ul>
+              <li>
+                <svg class="icon"><use href="#icon-ambulance"></use></svg>
+                <span>
+                  <strong>Emergency response</strong>
+                  Direct phone support for urgent cases.
+                </span>
+              </li>
+              <li>
+                <svg class="icon"><use href="#icon-stethoscope"></use></svg>
+                <span>
+                  <strong>OPD planning</strong>
+                  Share symptoms and choose your preferred visit date.
+                </span>
+              </li>
+              <li>
+                <svg class="icon"><use href="#icon-file-text"></use></svg>
+                <span>
+                  <strong>Admission guidance</strong>
+                  Know what documents to carry before arrival.
+                </span>
+              </li>
+            </ul>
+            <a class="text-link" href="#visit-guide">
+              Prepare for visit
+              <svg class="icon"><use href="#icon-arrow-right"></use></svg>
+            </a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="quick-access" aria-label="Quick hospital information">
+        <a href="tel:+918866290011">
+          <svg class="icon"><use href="#icon-phone"></use></svg>
+          <span>
+            <strong>Emergency</strong>
+            8866290011
+          </span>
+        </a>
+        <a href="tel:+918866920011">
+          <svg class="icon"><use href="#icon-clock"></use></svg>
+          <span>
+            <strong>24/7 Help</strong>
+            8866920011
+          </span>
+        </a>
+        <a href="mailto:rudrahospital6@gmail.com">
+          <svg class="icon"><use href="#icon-mail"></use></svg>
+          <span>
+            <strong>Email</strong>
+            rudrahospital6@gmail.com
+          </span>
+        </a>
+        <a href="#location">
+          <svg class="icon"><use href="#icon-map"></use></svg>
+          <span>
+            <strong>Location</strong>
+            Sama Canal Road
+          </span>
+        </a>
+      </section>
+
+      <section class="section care-access-section" id="care-access" aria-labelledby="care-access-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Start here</p>
+            <h2 id="care-access-title">Choose the quickest path for your care need.</h2>
+          </div>
+          <p>
+            Use these shortcuts to call, send details on WhatsApp, or pre-select the right appointment service before
+            you fill the form.
+          </p>
+        </div>
+        <div class="care-access-grid">
+          <article class="care-access-card urgent">
+            <svg class="icon facility-icon"><use href="#icon-ambulance"></use></svg>
+            <h3>Emergency or trauma</h3>
+            <p>For urgent symptoms, injury or critical care needs, call the hospital directly.</p>
+            <a class="button button-emergency" href="tel:+918866290011">
+              <svg class="icon"><use href="#icon-phone"></use></svg>
+              Call Now
+            </a>
+          </article>
+          <article class="care-access-card">
+            <svg class="icon facility-icon"><use href="#icon-stethoscope"></use></svg>
+            <h3>OPD consultation</h3>
+            <p>Request a visit for diagnosis, review, prescription, reports or follow-up care.</p>
+            <button class="button button-primary" type="button" data-service-shortcut="OPD consultation">
+              <svg class="icon"><use href="#icon-calendar"></use></svg>
+              Plan OPD Visit
+            </button>
+          </article>
+          <article class="care-access-card">
+            <svg class="icon facility-icon"><use href="#icon-bed"></use></svg>
+            <h3>Admission support</h3>
+            <p>Ask the team about IPD requirements, documents, reports and admission coordination.</p>
+            <button class="button button-secondary" type="button" data-service-shortcut="IPD admission">
+              <svg class="icon"><use href="#icon-file-text"></use></svg>
+              Prepare Admission
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <section class="section intro-section" aria-labelledby="intro-title">
+        <div class="section-heading">
+          <p class="eyebrow">Care close to home</p>
+          <h2 id="intro-title">A multispeciality hospital for emergency, OPD and admission care.</h2>
+        </div>
+        <div class="intro-grid">
+          <p>
+            Rudra Hospital supports patients with round-the-clock emergency response, trauma care, outpatient consultation,
+            inpatient care and planned day care services.
+          </p>
+          <ul class="check-list" aria-label="Hospital services summary">
+            <li><svg class="icon"><use href="#icon-check"></use></svg> Emergency and trauma support available 24/7</li>
+            <li><svg class="icon"><use href="#icon-check"></use></svg> OPD appointments for consultations and follow-ups</li>
+            <li><svg class="icon"><use href="#icon-check"></use></svg> IPD and day care support for monitored treatment</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section specialty-section" aria-labelledby="specialty-title">
+        <div class="section-heading compact">
+          <p class="eyebrow">Coordinated support</p>
+          <h2 id="specialty-title">Care teams built around common patient needs.</h2>
+        </div>
+        <div class="specialty-grid">
+          <article>
+            <span>01</span>
+            <h3>Emergency stabilization</h3>
+            <p>Fast triage, direct contact and trauma response for urgent medical needs.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Consultation and follow-up</h3>
+            <p>OPD visits for evaluation, prescription, report review and treatment planning.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Monitored admission</h3>
+            <p>IPD care support when observation, treatment or clinical monitoring is required.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Short-stay care</h3>
+            <p>Day care support for planned procedures and treatments without overnight stay.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="emergency-photo-band" aria-labelledby="emergency-photo-title">
+        <div class="emergency-photo-content">
+          <p class="eyebrow">Emergency support</p>
+          <h2 id="emergency-photo-title">Fast trauma care when every minute matters.</h2>
+          <p>
+            Rudra Hospital is ready for urgent medical needs with direct emergency contact, trauma response and
+            patient-focused care coordination.
+          </p>
+          <div class="emergency-photo-actions">
+            <a class="button button-emergency" href="tel:+918866290011">
+              <svg class="icon"><use href="#icon-phone"></use></svg>
+              Call 24/7 Emergency
+            </a>
+            <a
+              class="button button-whatsapp"
+              href="https://wa.me/918866290011?text=Hello%20Rudra%20Hospital%2C%20I%20need%20emergency%20or%20trauma%20support."
+              target="_blank"
+              rel="noopener"
+            >
+              <svg class="icon"><use href="#icon-message"></use></svg>
+              WhatsApp Emergency
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section facilities-section" id="facilities" aria-labelledby="facilities-title">
+        <div class="section-heading compact">
+          <p class="eyebrow">Facilities</p>
+          <h2 id="facilities-title">Hospital services</h2>
+        </div>
+        <div class="facility-grid">
+          <article class="facility-card">
+            <svg class="icon facility-icon"><use href="#icon-heart-pulse"></use></svg>
+            <h3>24/7 Emergency & Trauma Center</h3>
+            <p>Immediate attention for emergencies, trauma cases and critical stabilization.</p>
+          </article>
+          <article class="facility-card">
+            <svg class="icon facility-icon"><use href="#icon-stethoscope"></use></svg>
+            <h3>OPD Consultation</h3>
+            <p>Outpatient appointments for diagnosis, consultation, treatment plans and follow-up care.</p>
+          </article>
+          <article class="facility-card">
+            <svg class="icon facility-icon"><use href="#icon-bed"></use></svg>
+            <h3>IPD Admission</h3>
+            <p>Inpatient care with observation and clinical support for patients requiring admission.</p>
+          </article>
+          <article class="facility-card">
+            <svg class="icon facility-icon"><use href="#icon-clock"></use></svg>
+            <h3>Day Care</h3>
+            <p>Planned short-stay care for procedures and treatments that do not require overnight admission.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="care-band" aria-label="Care highlights">
+        <div>
+          <span class="band-number">01</span>
+          <strong>Multispeciality care</strong>
+          <p>Coordinated support across consultation, emergency and admission needs.</p>
+        </div>
+        <div>
+          <span class="band-number">02</span>
+          <strong>Emergency response</strong>
+          <p>Direct phone access for urgent care at any hour.</p>
+        </div>
+        <div>
+          <span class="band-number">03</span>
+          <strong>Appointment support</strong>
+          <p>Share your details and preferred visit time with the hospital team.</p>
+        </div>
+      </section>
+
+      <section class="section visit-guide-section" id="visit-guide" aria-labelledby="visit-guide-title">
+        <div class="visit-guide-copy">
+          <p class="eyebrow">Patient guide</p>
+          <h2 id="visit-guide-title">A smoother visit starts before you arrive.</h2>
+          <p>
+            Keep the essentials ready, share the important details early and reach the right desk with less waiting.
+          </p>
+          <a class="button button-primary" href="#appointment">
+            <svg class="icon"><use href="#icon-calendar"></use></svg>
+            Request Appointment
+          </a>
+        </div>
+        <div class="visit-steps" aria-label="Visit preparation steps">
+          <article>
+            <span>1</span>
+            <div>
+              <h3>Share concern</h3>
+              <p>Tell the team the patient's age, symptoms, visit type and preferred timing.</p>
+            </div>
+          </article>
+          <article>
+            <span>2</span>
+            <div>
+              <h3>Carry records</h3>
+              <p>Bring old reports, prescriptions, medicine list, ID proof and insurance papers if applicable.</p>
+            </div>
+          </article>
+          <article>
+            <span>3</span>
+            <div>
+              <h3>Reach the desk</h3>
+              <p>Use the emergency desk for urgent care or appointment desk for planned OPD visits.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section patient-section" id="patient-info" aria-labelledby="patient-title">
+        <div class="section-heading compact">
+          <p class="eyebrow">Patient information</p>
+          <h2 id="patient-title">Requirements and inquiry support</h2>
+        </div>
+        <div class="patient-grid">
+          <div class="requirements-panel">
+            <article class="requirement-card">
+              <svg class="icon facility-icon"><use href="#icon-file-text"></use></svg>
+              <h3>For OPD visit</h3>
+              <p>Carry previous reports, prescriptions, current medicine details and any referral note if available.</p>
+            </article>
+            <article class="requirement-card">
+              <svg class="icon facility-icon"><use href="#icon-bed"></use></svg>
+              <h3>For admission</h3>
+              <p>Bring patient ID proof, contact details, reports and insurance or mediclaim papers if applicable.</p>
+            </article>
+            <article class="requirement-card">
+              <svg class="icon facility-icon"><use href="#icon-heart-pulse"></use></svg>
+              <h3>For emergency</h3>
+              <p>Call the hospital directly and share the patient's condition, age, location and immediate concern.</p>
+            </article>
+          </div>
+
+          <form class="appointment-form inquiry-form" data-inquiry-form>
+            <div class="form-row">
+              <label for="inquiry-name">Name</label>
+              <input id="inquiry-name" name="name" type="text" autocomplete="name" required />
+            </div>
+            <div class="form-row">
+              <label for="inquiry-phone">Phone number</label>
+              <input id="inquiry-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required />
+            </div>
+            <div class="form-row">
+              <label for="inquiry-type">Inquiry type</label>
+              <select id="inquiry-type" name="type" required>
+                <option value="">Select inquiry</option>
+                <option>OPD appointment</option>
+                <option>Emergency / trauma</option>
+                <option>Admission / IPD</option>
+                <option>Day care procedure</option>
+                <option>Reports or billing</option>
+                <option>General inquiry</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="inquiry-time">Preferred contact time</label>
+              <input id="inquiry-time" name="time" type="text" placeholder="Morning / afternoon / evening" />
+            </div>
+            <div class="form-row full">
+              <label for="inquiry-message">Question or requirement</label>
+              <textarea id="inquiry-message" name="message" rows="4" placeholder="Write what you need help with" required></textarea>
+            </div>
+            <button class="button button-primary form-submit" type="submit">
+              <svg class="icon"><use href="#icon-message"></use></svg>
+              Send Inquiry on WhatsApp
+            </button>
+            <p class="form-status" role="status" aria-live="polite" data-inquiry-status></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="section appointment-section" id="appointment" aria-labelledby="appointment-title">
+        <div class="appointment-copy">
+          <p class="eyebrow">Book a visit</p>
+          <h2 id="appointment-title">Request an appointment</h2>
+          <p>
+            Send your details to Rudra Hospital on WhatsApp and the team can follow up by phone. For emergency or trauma
+            cases, call directly instead of waiting for appointment confirmation.
+          </p>
+          <div class="contact-stack">
+            <a
+              href="https://wa.me/918866290011?text=Hello%20Rudra%20Hospital%2C%20I%20want%20to%20request%20an%20appointment."
+              target="_blank"
+              rel="noopener"
+            >
+              <svg class="icon"><use href="#icon-calendar"></use></svg>
+              Quick appointment on WhatsApp
+            </a>
+            <a href="tel:+918866290011">
+              <svg class="icon"><use href="#icon-phone"></use></svg>
+              8866290011
+            </a>
+            <a href="tel:+918866920011">
+              <svg class="icon"><use href="#icon-phone"></use></svg>
+              8866920011
+            </a>
+          </div>
+        </div>
+
+        <form class="appointment-form" data-appointment-form>
+          <div class="form-row">
+            <label for="patient-name">Patient name</label>
+            <input id="patient-name" name="name" type="text" autocomplete="name" required />
+          </div>
+          <div class="form-row">
+            <label for="patient-phone">Phone number</label>
+            <input id="patient-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required />
+          </div>
+          <div class="form-row">
+            <label for="department">Service</label>
+            <select id="department" name="service" required>
+              <option value="">Select service</option>
+              <option>OPD consultation</option>
+              <option>Emergency / trauma</option>
+              <option>IPD admission</option>
+              <option>Day care</option>
+              <option>General enquiry</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="visit-date">Preferred date</label>
+            <input id="visit-date" name="date" type="date" required />
+          </div>
+          <div class="form-row full">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Briefly mention the concern or preferred timing"></textarea>
+          </div>
+          <button class="button button-primary form-submit" type="submit">
+            <svg class="icon"><use href="#icon-calendar"></use></svg>
+            Send Request on WhatsApp
+          </button>
+          <p class="form-status" role="status" aria-live="polite" data-form-status></p>
+        </form>
+      </section>
+
+      <section class="section feedback-section" id="feedback" aria-labelledby="feedback-title">
+        <div class="feedback-copy">
+          <p class="eyebrow">Reviews and feedback</p>
+          <h2 id="feedback-title">Share your experience</h2>
+          <p>
+            Patient feedback helps Rudra Hospital improve care, communication and service experience. You can also send a
+            concern or suggestion directly to the hospital team.
+          </p>
+          <div class="review-points" aria-label="Feedback topics">
+            <span><svg class="icon"><use href="#icon-star"></use></svg> Care experience</span>
+            <span><svg class="icon"><use href="#icon-message"></use></svg> Suggestions</span>
+            <span><svg class="icon"><use href="#icon-check"></use></svg> Service follow-up</span>
+          </div>
+        </div>
+
+        <form class="appointment-form feedback-form" data-feedback-form>
+          <div class="form-row">
+            <label for="feedback-name">Name</label>
+            <input id="feedback-name" name="name" type="text" autocomplete="name" required />
+          </div>
+          <div class="form-row">
+            <label for="feedback-phone">Phone number</label>
+            <input id="feedback-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" />
+          </div>
+          <div class="form-row">
+            <label for="feedback-rating">Rating</label>
+            <select id="feedback-rating" name="rating" required>
+              <option value="">Select rating</option>
+              <option>5 - Excellent</option>
+              <option>4 - Good</option>
+              <option>3 - Average</option>
+              <option>2 - Needs improvement</option>
+              <option>1 - Poor</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="feedback-visit">Visit type</label>
+            <select id="feedback-visit" name="visitType" required>
+              <option value="">Select visit type</option>
+              <option>OPD</option>
+              <option>Emergency / trauma</option>
+              <option>IPD</option>
+              <option>Day care</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-row full">
+            <label for="feedback-message">Review or feedback</label>
+            <textarea id="feedback-message" name="message" rows="4" placeholder="Tell us about your experience" required></textarea>
+          </div>
+          <button class="button button-whatsapp form-submit" type="submit">
+            <svg class="icon"><use href="#icon-star"></use></svg>
+            Send Feedback on WhatsApp
+          </button>
+          <p class="form-status" role="status" aria-live="polite" data-feedback-status></p>
+        </form>
+      </section>
+
+      <section class="section location-section" id="location" aria-labelledby="location-title">
+        <div class="location-map" aria-hidden="true">
+          <svg class="icon map-pin"><use href="#icon-map"></use></svg>
+          <span>22.3534569, 73.1878519</span>
+        </div>
+        <div class="location-copy">
+          <p class="eyebrow">Visit us</p>
+          <h2 id="location-title">Rudra Hospital, Vadodara</h2>
+          <address>
+            Opposite Rudra Heights, behind Sama Canal Road,<br />
+            behind Pruthviraj Circle, Vadodara, 390024.
+          </address>
+          <p class="coordinates">Coordinates: 22.353456935947257, 73.1878519101065</p>
+          <div class="location-actions">
+            <a
+              class="button button-primary"
+              href="https://www.google.com/maps/search/?api=1&query=22.353456935947257%2C73.1878519101065"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg class="icon"><use href="#icon-map"></use></svg>
+              Open Map
+            </a>
+            <a class="button button-secondary" href="mailto:rudrahospital6@gmail.com">
+              <svg class="icon"><use href="#icon-mail"></use></svg>
+              Email Hospital
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <img class="footer-logo" src="assets/rudra-hospital-logo.jpg" alt="Rudra Hospital logo" />
+        <div>
+          <strong>Rudra Hospital</strong>
+          <p>Multispeciality hospital with 24/7 emergency and trauma care.</p>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="tel:+918866290011">8866290011</a>
+        <a href="tel:+918866920011">8866920011</a>
+        <a href="mailto:rudrahospital6@gmail.com">rudrahospital6@gmail.com</a>
+      </div>
+    </footer>
+
+    <a class="floating-call" href="tel:+918866290011" aria-label="Call Rudra Hospital emergency">
+      <svg class="icon"><use href="#icon-phone"></use></svg>
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
